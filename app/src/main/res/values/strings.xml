@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Kioskos</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_sites">Lugares</string>
+    <string name="title_car">Carrito</string>
+    <string name="title_perfil">Perfil</string>
+
+    <!--General-->
+    <string name="logo_app">Logo App</string>
+
+    <!--Login Activity-->
+    <string name="log_email">Correo</string>
+    <string name="log_password">Contraseña</string>
+    <string name="log_forgot">Recuperar Contraseña</string>
+    <string name="log_login">Ingresar</string>
+    <string name="log_signin">Registrarse</string>
+
+
+    <!--Pantalla Inicio-->
+    <string name="name_app">KIOSKOS APP</string>
+    <string name="type_food">Tipo de comida</string>
+    <string-array name="types_foods">
+        <item>Comida rápida</item>
+        <item>Elegante</item>
+        <item>China</item>
+        <item>Italiana</item>
+        <item>Sin registro sanitario</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">Atrás</string>
+    <string name="option1">Opción 1</string>
+    <string name="option2">Opción 2</string>
+    <string name="dialog_message">Alerta opción 1</string>
+    <string name="dialog_title">Título alerta opción 1</string>
+
+    <string name="dialog_message2">Alerta opción 2</string>
+    <string name="dialog_title2">Título alerta opción 2</string>
+    <string name="register_button_text">Guardar</string>
+    <string name="txt_nombres">Nombres</string>
+    <string name="txt_apellidos">Apellidos</string>
+    <string name="txt_usuario">Usuario</string>
+    <string name="txt_contrasenia">Contraseña</string>
+    <string name="lbl_titulo">Registro</string>
+</resources>
