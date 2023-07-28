@@ -1,20 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.CartFragment">
+    android:orientation="vertical"
+    tools:context=".ui.cliente.CartFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Lista de productos en el carrito -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Resumen del pedido -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cart Fragment"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Subtotal -->
+        <TextView
+            android:id="@+id/textViewSubtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtotal: $0.00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Impuestos -->
+        <TextView
+            android:id="@+id/textViewImpuestos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IVA: $0.00"
+            android:textSize="18sp" />
+
+        <!-- Descuentos -->
+        <TextView
+            android:id="@+id/textViewDescuentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descuentos: -$0.00"
+            android:textSize="18sp" />
+
+        <!-- Total a pagar -->
+        <TextView
+            android:id="@+id/textViewTotalPagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total a pagar: $0.00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Botón para proceder al pago -->
+        <Button
+            android:id="@+id/btnProcederPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceder al pago"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

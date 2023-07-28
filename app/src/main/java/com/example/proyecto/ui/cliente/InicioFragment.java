@@ -1,4 +1,4 @@
-package com.example.proyecto.ui;
+package com.example.proyecto.ui.cliente;
 
 import android.app.AlertDialog;
 import android.os.Bundle;

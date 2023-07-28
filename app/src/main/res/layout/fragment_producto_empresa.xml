@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.empresa.principal.ProductoEmpresa">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Administrar Productos"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Nombre del Producto"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextDescripcionProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="top"
+        android:hint="Descripción del Producto"
+        android:inputType="textMultiLine"
+        android:lines="3" />
+
+    <EditText
+        android:id="@+id/editTextPrecioProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Precio del Producto"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextStockProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Cantidad en Stock"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAgregarProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Agregar al Stock"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+</LinearLayout>

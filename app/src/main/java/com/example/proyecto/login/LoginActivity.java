@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.proyecto.R;
+import com.example.proyecto.ui.empresa.MenuPrincipalEmpresa;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -55,7 +56,8 @@ public class LoginActivity extends AppCompatActivity {
                 progressDialog.setMessage("Cargando...");
                 progressDialog.setCancelable(false);
                 progressDialog.show();
-                retrocederLogin(v);
+                //retrocederLogin(v);
+                startActivity(new Intent(getApplicationContext(), MenuPrincipalEmpresa.class));
                 progressDialog.dismiss();
             }
         });

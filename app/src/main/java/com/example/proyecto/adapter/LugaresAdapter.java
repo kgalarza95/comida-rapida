@@ -10,9 +10,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.proyecto.ui.cliente.submenu.ProductosPorLugar;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -62,7 +65,13 @@ public class LugaresAdapter extends FirestoreRecyclerAdapter<Lugar, LugaresAdapt
         holder.linearLCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //context.startActivity(new Intent(context, ProductosPorLugar.class));
 
+                FragmentManager fragmentManager = ((AppCompatActivity) context).getSupportFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.frame_layout, new ProductosPorLugar())
+                        .addToBackStack(null) //permite volver al fragmento anterior presionando  Atrás
+                        .commit();
             }
         });
     }

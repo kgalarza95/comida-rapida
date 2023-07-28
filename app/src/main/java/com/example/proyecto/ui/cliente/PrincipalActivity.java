@@ -1,24 +1,17 @@
-package com.example.proyecto;
+package com.example.proyecto.ui.cliente;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.fragment.FragmentNavigatorExtrasKt;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.view.MenuItem;
 
+import com.example.proyecto.R;
 import com.example.proyecto.databinding.ActivityPrincipalBinding;
-import com.example.proyecto.ui.CartFragment;
-import com.example.proyecto.ui.InicioFragment;
-import com.example.proyecto.ui.LugaresFragment;
-import com.example.proyecto.ui.UserFragment;
 import com.google.android.material.badge.BadgeDrawable;
-import com.google.android.material.navigation.NavigationBarView;
 
 public class PrincipalActivity extends AppCompatActivity {
 

@@ -7,8 +7,8 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Pair;
-import android.view.View;
+
+import com.example.proyecto.ui.cliente.PrincipalActivity;
 
 public class TempActivity extends AppCompatActivity {
 
